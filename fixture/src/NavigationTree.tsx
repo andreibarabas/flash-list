@@ -1,6 +1,6 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Reminders from "./Reminders";
 import List from "./List";
@@ -15,7 +15,7 @@ import { Messages, MessagesFlatList } from "./Messages";
 import TwitterBenchmark from "./twitter/TwitterBenchmark";
 import TwitterCustomCellContainer from "./twitter/CustomCellRendererComponent";
 
-const Stack = createStackNavigator<RootStackParamList>();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const NavigationTree = () => {
   return (

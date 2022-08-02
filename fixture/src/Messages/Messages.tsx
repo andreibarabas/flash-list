@@ -29,7 +29,14 @@ const Messages = () => {
       style={styles.keyboardAvoidingViewStyles}
     >
       <FlashList
-        renderItem={MessageItem}
+        renderItem={({ item }) => {
+          // simulate a complex message item
+          for (let i = 0; i < 1000; i++) {
+            console.log(i);
+          }
+
+          return <MessageItem item={item} />;
+        }}
         inverted
         estimatedItemSize={100}
         keyExtractor={(item) => {

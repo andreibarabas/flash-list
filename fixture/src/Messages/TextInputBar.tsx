@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     borderColor: "#ddd",
     borderWidth: 0.5,
     paddingHorizontal: 16,
-    fontSize: 16,
+    fontSize: 64,
     margin: 8,
     paddingVertical: 8,
     paddingTop: 8,
